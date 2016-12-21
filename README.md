@@ -53,8 +53,8 @@ http://design.google.com
 <button class="btn">波纹按钮3</button>
 </body>
 <script>
-    (function ($) {
-        $.fn.extend({
+    (function ($) {             //jQuery封装水波的方法
+        $.fn.extend({
             "rippleBtn": function () {
                 return this.each(function () {
                     $(this).on('click', function (e) {
@@ -76,7 +76,7 @@ http://design.google.com
             }
         })
     })(jQuery)
-    $('.btn').rippleBtn()
+    $('.btn').rippleBtn()       //调用的方法
 </script>
 </html>
 ```
